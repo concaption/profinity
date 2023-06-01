@@ -1,4 +1,6 @@
 .idea
+.DS_Store
+.firebaserc
 **/node_modules/*
 **/.firebase
 **/.firebaserc
