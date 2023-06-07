@@ -5375,11 +5375,21 @@ ul:not(.cs-mega_wrapper)
   margin-top: -5px;
   margin-bottom: -150px;
 }
+.service-link {
+  flex: 1 0 calc(20% - 20px);
 
+}
+/* .cs-icon{
+  text-align:center;
+} */
+.cs-icon svg path{
+  fill: #BFCAC6;
+}
 .service-card {
-  flex: 0 0 calc(20% - 20px);
+  /* flex: 0 0 calc(20% - 20px); */
   margin: 10px;
   background-color: #272D3F;
+  height:100%;
   text-align: left;
   border-radius: 13px;
   padding: 15px;
@@ -5406,7 +5416,7 @@ ul:not(.cs-mega_wrapper)
 .service-card .cs-icon  {
   width: 30px;
   height: 30px;
-  margin-bottom: 7px; 
+  margin-bottom: 7px;
   flex-shrink: 0; /* Prevents flexbox from shrinking this item */
   color: #BFCAC6; /* Sets the color of the icon to black */
 }
@@ -5471,7 +5481,7 @@ div.col-12 h3 {
   }
 }
 
-  
+
   .service-card {
     flex-basis: calc(20% - 20px);
   }
