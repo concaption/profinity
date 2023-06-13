@@ -910,8 +910,23 @@ hr {
   margin-top: 30px;
 }
 
-
-
+.service-card .cs-text_btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 20px; /* Add padding to make the button bigger */
+  background-color: transparent; /* Set the background to transparent */
+  text-decoration: none; /* Remove underline from the text */
+  border:none;
+}
+.service-card .cs-text_btn:hover {
+  color:red;
+}
 .cs-text_btn svg {
   margin-left: 15px;
 }
@@ -5068,7 +5083,10 @@ ul:not(.cs-mega_wrapper)
   margin-top: 20px; /* This adds space above the button */
   margin-bottom: 80px;
 }
-
+.service-card .cs-text_btn {
+  margin-top:0;
+  margin-bottom:0;
+}
 /* Responsive styles */
 @media screen and (max-width: 1200px) {
   .cs-hero_title {
@@ -5386,17 +5404,18 @@ ul:not(.cs-mega_wrapper)
   fill: #BFCAC6;
 }
 .service-card {
-  /* flex: 0 0 calc(20% - 20px); */
+  flex: 0 0 calc(20% - 20px);
   margin: 10px;
   background-color: #272D3F;
-  height:100%;
+  /* box-sizing:content-box; */
+  /* height:100%; */
   text-align: left;
   border-radius: 13px;
   padding: 15px;
   box-shadow: 0px 0px 30px rgba(138, 94, 94, 0.1);
   position: relative;
   overflow: hidden;
-  color: white;
+  color: rgb(63, 2, 2);
   transition: background-color 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -5411,7 +5430,9 @@ ul:not(.cs-mega_wrapper)
   fill: white;
 }
 
-
+.description {
+  flex:1;
+}
 
 .service-card .cs-icon  {
   width: 30px;
@@ -5456,8 +5477,11 @@ div.col-12 h3 {
 @media (max-width: 575.98px) {
   .services-row {
     justify-content: center;
+    align-items:center;
   }
-
+  .cs-icon.col-lg-6{
+    display:none;
+  }
   /* Nested media query for service cards */
   .services-row .service-card {
     flex-basis: 100%;
@@ -5467,25 +5491,22 @@ div.col-12 h3 {
   /* For screens between 576px and 992.98px (e.g. tablets) */
 @media (min-width: 576px) and (max-width: 992.98px) {
   .service-card {
-    flex-basis: calc(50% - 20px);
+    flex-basis: 35%;
   }
 }
 
 /* For screens between 576px and 992px (e.g. tablets) */
 @media screen and (min-width: 576px) and (max-width: 992.96px) {
-  .services-row {
-    flex-wrap: wrap;
-  }
-  .service-card {
-    flex-basis: calc(50% - 20px);
+  .service-card{
+    flex-basis:calc(50% - 20px);
   }
 }
 
 
-  .service-card {
+  /* .service-card {
     flex-basis: calc(20% - 20px);
-  }
-}
+  } */
+
 
 
 
